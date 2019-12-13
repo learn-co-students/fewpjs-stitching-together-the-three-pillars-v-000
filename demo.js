@@ -50,6 +50,7 @@ for (let glyph of articleHearts) {
 // pretty as a professional site, but they're only different from our site in
 // style, not substance.
 
+
 //------------------------------------------------------------------------------
 // Ignore after this point. Used only for demo purposes
 //------------------------------------------------------------------------------
