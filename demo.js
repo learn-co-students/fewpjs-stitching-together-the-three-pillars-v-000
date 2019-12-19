@@ -10,9 +10,9 @@ let colorStates = {
   "": "red"
 };
 
-// STEP 1: This code is what lets JavaScript find the elements that we want to make clickable.
-// Without JavaScript, clicking on these heart shapes does nothing. Uncomment
-// this code and refresh the demo page.
+STEP 1: This code is what lets JavaScript find the elements that we want to make clickable.
+Without JavaScript, clicking on these heart shapes does nothing. Uncomment
+this code and refresh the demo page.
 
 // let articleHearts = document.querySelectorAll(".like-glyph");
 
@@ -43,7 +43,7 @@ function likeCallback(e) {
   //glyph.addEventListener("click", likeCallback);
 //}
 
-// STEP 4: 
+// STEP 4:
 
 // When all the STEPs' code changes have been complete, you'll be able to see a
 // working demonstration of our reference example. Sure, it's maybe not as
