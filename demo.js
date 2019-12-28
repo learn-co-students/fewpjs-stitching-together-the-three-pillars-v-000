@@ -14,12 +14,12 @@ let colorStates = {
 // Without JavaScript, clicking on these heart shapes does nothing. Uncomment
 // this code and refresh the demo page.
 
-let articleHearts = document.querySelectorAll(".like");
+let articleHearts = document.querySelectorAll(".like-glyph");
 
 function likeCallback(e) {
   let heart = e.target;
   mimicServerCall()
-    .then(function(serverMessage) {
+    .then(function (serverMessage) {
       // STEP 2: Uncomment the next 3 lines.
       // We'll use Pillar 1 (DOM Manipulation) to update the screen and
       // mimic Pillar 3 (Server Communication) to only update the screen if the
@@ -29,7 +29,7 @@ function likeCallback(e) {
       heart.innerText = glyphStates[heart.innerText];
       heart.style.color = colorStates[heart.style.color];
     })
-    .catch(function(error) {
+    .catch(function (error) {
       alert("Something went wrong!");
     });
 }
@@ -55,8 +55,8 @@ for (let glyph of articleHearts) {
 //------------------------------------------------------------------------------
 
 function mimicServerCall() {
-  return new Promise(function(resolve, reject) {
-    setTimeout(function() {
+  return new Promise(function (resolve, reject) {
+    setTimeout(function () {
       resolve("Pretend remote server notified of action!");
     }, 300);
   });
