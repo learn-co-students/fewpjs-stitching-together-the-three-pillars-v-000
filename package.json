@@ -4,7 +4,10 @@
   "description": "A JavaScript lab",
   "main": "index.js",
   "scripts": {
-    "test": "mocha -R mocha-multi --reporter-options spec=-,json=.results.json"
+    "start": "SET NODE_ENV=dev && node ./bin/www",
+    "devstart": "SET NODE_ENV=dev && nodemon ./bin/www",
+    "test": "mocha --timeout 10000",
+    "-R mocha-multi --reporter-options spec=-": "json=.results.json"
   },
   "author": "flatironschool",
   "license": "Included in Repo",
